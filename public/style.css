@@ -1,0 +1,129 @@
+body {
+  font-family: Georgia, serif;
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+.top-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  min-height: 260px;
+}
+
+.slots-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+}
+
+.slot-card {
+  border: 1px solid #4a5bbd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.slot-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slot-time {
+  color: #3f51b5;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.slot-available {
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.popup-box {
+  width: 300px;
+  padding: 25px;
+  border: 1px solid #b2dfdb;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+#booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#booking-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#booking-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+#confirmation-text {
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.meetings-section {
+  margin-top: 50px;
+}
+
+.meetings-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.meetings-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.meeting-card {
+  width: 240px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: #f9f9f9;
+}
+
+.meeting-card h3 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.meeting-card p {
+  line-height: 1.4;
+  word-wrap: break-word;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule meetings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-section">
+    <div id="slots-container" class="slots-container"></div>
+
+    <div id="booking-box" class="popup-box hidden">
+      <form id="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <button type="submit" class="btn-blue">Book</button>
+      </form>
+    </div>
+
+    <div id="confirmation-box" class="popup-box hidden">
+      <p id="confirmation-text"></p>
+    </div>
+  </div>
+
+  <div class="meetings-section">
+    <h2>Scheduled meetings</h2>
+    <div id="meetings-container" class="meetings-container"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
